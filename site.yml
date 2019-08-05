@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+
+  vars:
+    sensu_cluster: True
+
+  roles:
+    - role: ansible-sensu-go
