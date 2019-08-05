@@ -1,9 +1,22 @@
 ---
-- hosts: all
+- hosts: sensu-backend-server
   become: true
 
   vars:
+    server: True
+    sensu_client_subs:
+        - linux
     sensu_cluster: True
+
+  roles:
+    - role: ansible-sensu-go
+
+- hosts: sensu-agent
+  become: true
+  vars:
+    server: False
+    sensu_client_subs:
+        - linux
 
   roles:
     - role: ansible-sensu-go
