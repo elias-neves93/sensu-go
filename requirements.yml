@@ -1,5 +1,5 @@
 ---
-# install_roles.yml
+# requirements.yml
 # how to use: $ ansible-galaxy install -r requirements.yml -p roles/
 
 # ansible-sensu-go role from github

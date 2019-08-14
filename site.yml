@@ -31,5 +31,10 @@
     sensu_client_subs:
         - linux
 
+    backend_url:
+        - "ws://192.168.88.100:8081"
+        - "ws://192.168.88.101:8081"
+        - "ws://192.168.88.102:8081"
+
   roles:
     - role: ansible-sensu-go
