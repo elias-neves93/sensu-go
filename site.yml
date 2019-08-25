@@ -3,14 +3,14 @@
   become: true
 
   vars:
-    server: True
+    server: true
 
-    slack: True
+    slack: true
     slack_webhook_url: https://hooks.slack.com/services/xxx
     slack_channel: "@elias"
     sensu_client_subs:
         - linux
-    sensu_cluster: True
+    sensu_cluster: true
 
     etcd_advertise_client_urls: "http://{{ ansible_enp0s8.ipv4.address }}:2379"
     etcd_initial_advertise_peer_urls: "http://{{ ansible_enp0s8.ipv4.address }}:2380"
@@ -24,6 +24,11 @@
     etcd_listen_client_urls: "http://{{ ansible_enp0s8.ipv4.address }}:2379"
     etcd_listen_peer_urls: "http://0.0.0.0:2380"
     etcd_name: "{{ ansible_hostname }}"
+
+    backend_url:
+        - "ws://192.168.88.100:8081"
+        - "ws://192.168.88.101:8081"
+        - "ws://192.168.88.102:8081"
 
   roles:
     - role: ansible-sensu-go
