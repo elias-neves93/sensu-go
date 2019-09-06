@@ -1,3 +1,0 @@
-server: True
-sensu_client_subs:
-    - linux

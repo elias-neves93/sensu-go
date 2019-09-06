@@ -7,7 +7,7 @@ machines = {
 	"backend-3" => {"memory"=>"2048", "cpus"=>"2", "ip" => "102" },
 	"agent-1" => {"memory"=>"1024", "cpus"=>"1", "ip" => "110" },
 	"agent-2" => {"memory"=>"1024", "cpus"=>"1", "ip" => "111" },
-	"agent-3" => {"memory"=>"1024", "cpus"=>"1", "ip" => "112" },
+	#{}"agent-3" => {"memory"=>"1024", "cpus"=>"1", "ip" => "112" },
 }
 
 Vagrant.configure("2") do |config|

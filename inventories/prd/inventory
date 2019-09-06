@@ -1,9 +1,9 @@
 [sensu-backend-server]
-192.168.88.100 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/backend-1/virtualbox/private_key'
-192.168.88.101 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/backend-2/virtualbox/private_key'
-192.168.88.102 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/backend-3/virtualbox/private_key'
+backend-1 ansible_host=192.168.88.100 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/backend-1/virtualbox/private_key'
+backend-2 ansible_host=192.168.88.101 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/backend-2/virtualbox/private_key'
+backend-3 ansible_host=192.168.88.102 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/backend-3/virtualbox/private_key'
 
 [sensu-agent]
-192.168.88.110 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/agent-1/virtualbox/private_key'
-192.168.88.111 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/agent-2/virtualbox/private_key'
-192.168.88.112 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/agent-3/virtualbox/private_key'
+agent-1 ansible_host=192.168.88.110 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/agent-1/virtualbox/private_key'
+agent-2 ansible_host=192.168.88.111 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/agent-2/virtualbox/private_key'
+#192.168.88.112 ansible_host=agent-3 ansible_user=vagrant ansible_ssh_private_key_file='.vagrant/machines/agent-3/virtualbox/private_key'

@@ -1,3 +1,1 @@
-server: False
-sensu_client_subs:
-    - linux
+
